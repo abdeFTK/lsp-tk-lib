@@ -1943,7 +1943,7 @@ namespace lsp
                     }
 
                     // Add entry to list of found files
-                    if ((xres = add_file_entry(&scanned, fname.as_native(), nflags)) != STATUS_OK)
+                    if ((xres = add_file_entry(&scanned, fname.as_utf8(), nflags)) != STATUS_OK)
                     {
                         dir.close();
                         destroy_file_entries(&scanned);
